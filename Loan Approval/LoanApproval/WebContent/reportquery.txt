@@ -1,0 +1,55 @@
+SQL> select bankname,custname,state from  customers where bankname='ING'and stat
+e='Sanction' and cdate between '01-sep-07' and '27-sep-07';
+
+BANKNAME             CUSTNAME
+-------------------- -------------------------
+STATE
+--------------------------------------------------
+ING                  xxx
+Sanction
+
+pending files
+=========================
+ select state,custname from customers where state!='Sanction' and state!='R
+ject';
+
+STATE                                              CUSTNAME
+-------------------------------------------------- -------------------------
+Verificationover                                   bala
+Pickup                                             Sujatha
+new                                                ramesh
+VerificationOver                                   Eliyana
+Pickup                                             Paparao
+Pickup                                             silpa
+new                                  
+
+              praveen
+
+7 rows selected.
+
+
+===============================================
+Rejected Files
+
+ select state,custname,sanctioneddate,buildername from customers where state
+='Reject';
+
+STATE                                              CUSTNAME
+-------------------------------------------------- -------------------------
+SANCTIONE BUILDERNAME
+--------- --------------------------------------------------
+Reject                                             Rajini
+27-SEP-07 nobuilder
+
+
+
+
+
+==========================
+
+
+sorting order by
+
+ select cdate from customers order by cdate desc;
+
+
